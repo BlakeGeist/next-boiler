@@ -462,7 +462,7 @@ MyApp.getInitialProps = async ({
   ctx
 }) => {
   if (ctx.req) {
-    await Object(_helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_4__["default"])(ctx);
+    Object(_helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_4__["default"])(ctx);
     await Object(_helpers_setUserState__WEBPACK_IMPORTED_MODULE_3__["default"])(ctx);
   }
 

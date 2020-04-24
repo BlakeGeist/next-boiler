@@ -36405,26 +36405,23 @@ MyApp.getInitialProps = function _callee(_ref2) {
           Component = _ref2.Component, ctx = _ref2.ctx;
 
           if (!ctx.req) {
-            _context.next = 6;
+            _context.next = 5;
             break;
           }
 
-          _context.next = 4;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_6__["default"])(ctx));
-
-        case 4:
-          _context.next = 6;
+          Object(_helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_6__["default"])(ctx);
+          _context.next = 5;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_helpers_setUserState__WEBPACK_IMPORTED_MODULE_5__["default"])(ctx));
 
-        case 6:
-          _context.next = 8;
+        case 5:
+          _context.next = 7;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_helpers_getPageStrings__WEBPACK_IMPORTED_MODULE_7__["default"])(ctx));
 
-        case 8:
-          _context.next = 10;
+        case 7:
+          _context.next = 9;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_helpers_getGlobalStrings__WEBPACK_IMPORTED_MODULE_8__["default"])(ctx));
 
-        case 10:
+        case 9:
           ctx.reduxStore.dispatch({
             type: "SET_ITEM",
             name: "lang",
@@ -36432,28 +36429,28 @@ MyApp.getInitialProps = function _callee(_ref2) {
           });
 
           if (!Component.getInitialProps) {
-            _context.next = 17;
+            _context.next = 16;
             break;
           }
 
-          _context.next = 14;
+          _context.next = 13;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Component.getInitialProps(ctx));
 
-        case 14:
+        case 13:
           _context.t0 = _context.sent;
-          _context.next = 18;
+          _context.next = 17;
           break;
 
-        case 17:
+        case 16:
           _context.t0 = {};
 
-        case 18:
+        case 17:
           pageProps = _context.t0;
           return _context.abrupt("return", {
             pageProps: pageProps
           });
 
-        case 20:
+        case 19:
         case "end":
           return _context.stop();
       }
