@@ -1,0 +1,1 @@
+{"ast":null,"code":"const stringsModule = require('../../helpers/importStrings');\n\nexport default (async (req, res) => {\n  await stringsModule.handler(req, res);\n});","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (function () {\n  var today = new Date();\n  var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();\n  var time = today.getHours() + \":\" + today.getMinutes() + \":\" + today.getSeconds();\n  var dateTime = date + ' ' + time;\n  return dateTime;\n});","map":null,"metadata":{},"sourceType":"module"}

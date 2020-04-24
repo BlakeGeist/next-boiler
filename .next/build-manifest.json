@@ -1,0 +1,100 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/[lang]": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/about": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/admin": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/blog": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/contact": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/contact/ContactForm": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/dashboard": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/dashboard/strings": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/dashboard/strings/components/Form": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/login": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/p": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/p/[slug]": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/p/components/AddProductFrom": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/p/components/RichEditor": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/privacy": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/sign-up": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/[lang]/terms": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.09a6ad37561583f2f5b0.js",
+      "static/runtime/main-3e3a5bf3d84550af53b0.js"
+    ]
+  }
+}

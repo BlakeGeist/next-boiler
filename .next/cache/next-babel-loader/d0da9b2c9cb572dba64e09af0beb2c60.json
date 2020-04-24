@@ -1,0 +1,1 @@
+{"ast":null,"code":"const admin = require(\"firebase-admin\");\n\nconst Admin = () => {\n  if (!admin.apps.length) {\n    admin.initializeApp({\n      credential: admin.credential.cert(require(\"../../credentials/server\"))\n    });\n  }\n\n  ;\n  return admin;\n};\n\nexport default Admin;","map":null,"metadata":{},"sourceType":"module"}
