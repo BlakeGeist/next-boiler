@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "name": "next-boiler",
-  "builds": [
-    {"src": "_app.js", "use": "@now/node"}  
-  ]
-}
