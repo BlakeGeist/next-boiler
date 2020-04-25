@@ -12,10 +12,6 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/[lang]/blog": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/[lang]/p": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
