@@ -1,1 +1,0 @@
-{"ast":null,"code":"export default (() => {\n  const today = new Date();\n  const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();\n  const time = today.getHours() + \":\" + today.getMinutes() + \":\" + today.getSeconds();\n  const dateTime = date + ' ' + time;\n  return dateTime;\n});","map":null,"metadata":{},"sourceType":"module"}

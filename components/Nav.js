@@ -20,8 +20,6 @@ const Nav = ({ router, user, dispatch, lang, strings }) => {
         { href: `/${lang}`, label: translate("HOME", strings, lang), target: "/" },
         { href: `/${lang}/about`, label: translate("ABOUT-US", strings, lang), target: "/about" },
         { href: `/${lang}/contact`, label: translate("CONTACT", strings, lang), target: "/contact" },
-        { href: `/${lang}/p`, label: translate("SHOP", strings, lang), target: "/p" },
-        { href: `/${lang}/blog`, label: translate("BLOG", strings, lang), target: "/blog" },
         { href: "https://github.com/BlakeGeist/next-firebase-boiler", label: "GitHub", isExternal: true }
     ].map(link => {
         link.key = `nav-link-${link.href}-${link.label}`;
