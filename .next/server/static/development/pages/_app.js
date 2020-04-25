@@ -329,7 +329,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store */ "./store.js");
-var _jsxFileName = "C:\\Users\\Blake Geist\\Documents\\blakes-apps\\react\\next-boiler\\lib\\reducers.js";
+var _jsxFileName = "C:\\Users\\Blake Geist\\Documents\\blakes-apps\\react\\next-boiler\\next-boiler\\lib\\reducers.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -418,13 +418,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../helpers/redirectIfNoLanguage */ "./helpers/redirectIfNoLanguage.js");
 /* harmony import */ var _helpers_getPageStrings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../helpers/_getPageStrings */ "./helpers/_getPageStrings.js");
 /* harmony import */ var _helpers_getGlobalStrings__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../helpers/_getGlobalStrings */ "./helpers/_getGlobalStrings.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\Users\\Blake Geist\\Documents\\blakes-apps\\react\\next-boiler\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\Blake Geist\\Documents\\blakes-apps\\react\\next-boiler\\next-boiler\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
 
 
 
@@ -439,28 +436,40 @@ const MyApp = ({
   pageProps,
   reduxStore
 }) => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
+  return __jsx(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
     store: reduxStore,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 13
+      lineNumber: 11,
+      columnNumber: 9
     }
   }, __jsx(Component, _extends({}, pageProps, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 17
+      lineNumber: 12,
+      columnNumber: 13
     }
-  }))));
+  })));
 };
 
 MyApp.getInitialProps = async ({
   Component,
   ctx
 }) => {
+  if (ctx.req) {
+    Object(_helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_4__["default"])(ctx);
+    await Object(_helpers_setUserState__WEBPACK_IMPORTED_MODULE_3__["default"])(ctx);
+  }
+
+  await Object(_helpers_getPageStrings__WEBPACK_IMPORTED_MODULE_5__["default"])(ctx);
+  await Object(_helpers_getGlobalStrings__WEBPACK_IMPORTED_MODULE_6__["default"])(ctx);
+  ctx.reduxStore.dispatch({
+    type: "SET_ITEM",
+    name: "lang",
+    payload: ctx.query.lang
+  });
   const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
   return {
     pageProps
@@ -605,17 +614,6 @@ module.exports = require("js-cookie");
 /***/ (function(module, exports) {
 
 module.exports = require("next-cookies");
-
-/***/ }),
-
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
 
 /***/ }),
 
