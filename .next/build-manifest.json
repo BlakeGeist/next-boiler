@@ -12,15 +12,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/[lang]/about": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/[lang]/blog": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/[lang]/contact": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
