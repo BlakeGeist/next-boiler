@@ -8,11 +8,9 @@ import getGlobalStrings from "../helpers/_getGlobalStrings";
 
 const MyApp = ({ Component, pageProps, reduxStore }) => {
     return (
-        <>
-            <Provider store={reduxStore}>
-                <Component {...pageProps} />
-            </Provider>
-        </>
+        <Provider store={reduxStore}>
+            <Component {...pageProps} />
+        </Provider>
     );
 };
 
