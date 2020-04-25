@@ -18,13 +18,6 @@ const MyApp = ({ Component, pageProps, reduxStore }) => {
 };
 
 MyApp.getInitialProps = async ({ Component, ctx }) => {
-    if (ctx.req){
-        redirectIfNoLanguage(ctx)
-        await setUserState(ctx)
-      }
-      await getPageStrings(ctx)
-      await getGlobalStrings(ctx)
-      ctx.reduxStore.dispatch({ type: "SET_ITEM", name: "lang", payload: ctx.query.lang });    
       const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
       return { pageProps };
 };

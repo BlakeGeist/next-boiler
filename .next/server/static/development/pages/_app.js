@@ -461,18 +461,6 @@ MyApp.getInitialProps = async ({
   Component,
   ctx
 }) => {
-  if (ctx.req) {
-    Object(_helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_4__["default"])(ctx);
-    await Object(_helpers_setUserState__WEBPACK_IMPORTED_MODULE_3__["default"])(ctx);
-  }
-
-  await Object(_helpers_getPageStrings__WEBPACK_IMPORTED_MODULE_5__["default"])(ctx);
-  await Object(_helpers_getGlobalStrings__WEBPACK_IMPORTED_MODULE_6__["default"])(ctx);
-  ctx.reduxStore.dispatch({
-    type: "SET_ITEM",
-    name: "lang",
-    payload: ctx.query.lang
-  });
   const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
   return {
     pageProps

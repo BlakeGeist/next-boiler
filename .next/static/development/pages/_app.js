@@ -36404,53 +36404,29 @@ MyApp.getInitialProps = function _callee(_ref2) {
         case 0:
           Component = _ref2.Component, ctx = _ref2.ctx;
 
-          if (!ctx.req) {
-            _context.next = 5;
-            break;
-          }
-
-          Object(_helpers_redirectIfNoLanguage__WEBPACK_IMPORTED_MODULE_6__["default"])(ctx);
-          _context.next = 5;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_helpers_setUserState__WEBPACK_IMPORTED_MODULE_5__["default"])(ctx));
-
-        case 5:
-          _context.next = 7;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_helpers_getPageStrings__WEBPACK_IMPORTED_MODULE_7__["default"])(ctx));
-
-        case 7:
-          _context.next = 9;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_helpers_getGlobalStrings__WEBPACK_IMPORTED_MODULE_8__["default"])(ctx));
-
-        case 9:
-          ctx.reduxStore.dispatch({
-            type: "SET_ITEM",
-            name: "lang",
-            payload: ctx.query.lang
-          });
-
           if (!Component.getInitialProps) {
-            _context.next = 16;
+            _context.next = 7;
             break;
           }
 
-          _context.next = 13;
+          _context.next = 4;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Component.getInitialProps(ctx));
 
-        case 13:
+        case 4:
           _context.t0 = _context.sent;
-          _context.next = 17;
+          _context.next = 8;
           break;
 
-        case 16:
+        case 7:
           _context.t0 = {};
 
-        case 17:
+        case 8:
           pageProps = _context.t0;
           return _context.abrupt("return", {
             pageProps: pageProps
           });
 
-        case 19:
+        case 10:
         case "end":
           return _context.stop();
       }
